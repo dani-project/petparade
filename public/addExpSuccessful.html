@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Home</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/petparadelogoactual.png" class="logo img-fluid" style="width: 100px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="users.html">Users</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownQuests" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Quests
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownQuests">
+              <a class="dropdown-item" href="quests.html">Quests</a>
+              <a class="dropdown-item" href="questlogs.html">Quest Logs</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPets" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pets
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPets">
+              <a class="dropdown-item" href="yourpets.html">Your Pets</a>
+              <a class="dropdown-item" href="petdex.html">Pet Dex</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <a id="moneysValue" class="moneysValue"></a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPets" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownAccount">
+              <a class="dropdown-item" id="profileButton" href="profile.html">Profile</a>
+              <a class="dropdown-item" id="logoutButton" href="#">Logout</a>
+              <a class="dropdown-item" id="loginButton" href="login.html">Login</a>
+              <a class="dropdown-item" id="registerButton" href="register.html">Register</a>
+            </div>
+        </li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+
+  <main class="py-4">
+
+    <div class="container mb-4">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4">
+          <h3 class="mb-4 text-center">Successfully Logged Quest Under Pet!</h3>
+          <p>Thanks for completing the quest and helping the environment!</p>
+          <a href="yourpets.html" class="btn btn-success btn-block mb-4">Back</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-auto py-3 bg-primary text-center">
+    <p class="m-0 py-0 px-4">
+      Created by Mr Siah Peih Wee for Educational Purposes in Backend
+      Development. Pokémon and Pokémon character names are trademarks of Nintendo. Artworks are from
+      <a class="link-light" href="https://pokeapi.co/" target="_blank">PokeAPI</a>
+    </p>
+  </footer>
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="./js/loading.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <script src="js/getCurrentURL.js" type="text/javascript"></script>
+  <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+  <script src="js/getMoneys.js" type="text/javascript"></script>
+  
+</body>
+
+</html>
